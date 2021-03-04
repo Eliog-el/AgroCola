@@ -4,8 +4,6 @@
 900 - 1200px: Tablet landscape
 1200-1800px: Our normal desktop styles
 1800px +: big desktop
-ORDER:  Base + typography > general layout + grid >
-        page layout > components
 $breakpoint arguments choices:
 -phone-small
 -phone
@@ -42,6 +40,10 @@ html {
   .headingg {
     background: #008737; } }
 
+@media only screen and (max-width: 37.5em) {
+  .headingg {
+    background: #008737; } }
+
 .header-background {
   position: absolute;
   top: 0;
@@ -72,6 +74,10 @@ html {
     .heading-container {
       flex-direction: column;
       margin-left: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-container {
+      flex-direction: column;
+      margin-left: 3rem; } }
   .heading-container .heading-text {
     color: white;
     text-align: center;
@@ -100,6 +106,9 @@ html {
   .heading-svg img {
     width: 100%;
     height: auto; }
+    @media only screen and (max-width: 75em) {
+      .heading-svg img {
+        margin-top: -4.5rem; } }
 
 .section1 {
   margin-top: -7rem;
@@ -107,6 +116,10 @@ html {
   margin-left: 16.2rem;
   position: relative;
   margin-bottom: 15rem; }
+  @media only screen and (max-width: 75em) {
+    .section1 {
+      margin: 0 auto;
+      text-align: center; } }
   .section1 .commitment {
     position: absolute;
     bottom: -42rem;
@@ -138,8 +151,12 @@ html {
 .section2 {
   display: flex;
   margin-top: 8.4rem;
-  padding-left: 16.2rem;
+  margin-left: 16.2rem;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section2 {
+      margin: 0 auto;
+      text-align: center; } }
   .section2 .policies {
     position: absolute;
     left: 0;
@@ -178,6 +195,10 @@ html {
   margin-top: 16.8rem;
   margin-bottom: 16.3rem;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section3 {
+      margin: 0 auto;
+      text-align: center; } }
   .section3 .sustainable {
     position: absolute;
     bottom: -20rem;
@@ -189,7 +210,7 @@ html {
       margin-top: 0rem; }
       .section3 img {
         margin: 0 auto;
-        width: 50rem; } }
+        width: 100%; } }
   .section3 .section3-text {
     margin-top: 21.4rem; }
     .section3 .section3-text h1 {
@@ -203,15 +224,12 @@ html {
       @media only screen and (max-width: 75em) {
         .section3 .section3-text p {
           font-size: 2.2rem; } }
-  .section3 .section2-img {
-    width: 63rem;
-    height: auto; }
-    @media only screen and (max-width: 75em) {
-      .section3 .section2-img {
-        width: 100%; } }
 
 .section4 {
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section4 {
+      text-align: center; } }
   .section4 .card-rect {
     position: absolute;
     z-index: -1;
@@ -223,6 +241,10 @@ html {
     margin-left: 11.8rem;
     font-size: 5rem;
     line-height: 6.62rem; }
+    @media only screen and (max-width: 75em) {
+      .section4 h1 {
+        text-align: center;
+        margin: 0; } }
   .section4 .cards1 {
     display: grid;
     justify-content: space-between;
@@ -246,6 +268,9 @@ html {
     @media only screen and (max-width: 37.5em) {
       .section4 .cards1 {
         grid-template-columns: 100%; } }
+    @media only screen and (max-width: 75em) {
+      .section4 .cards1 {
+        align-content: center; } }
     .section4 .cards1 div {
       width: fit-content; }
     .section4 .cards1 img {
@@ -277,6 +302,10 @@ html {
     color: green;
     margin-left: 26.5rem;
     margin-bottom: 15.5rem; }
+    @media only screen and (max-width: 75em) {
+      .section6 h1 {
+        align-text: center;
+        margin-left: 0; } }
   .section6 img {
     width: 68.7rem;
     height: 100%;
@@ -291,22 +320,37 @@ html {
   margin-top: 12.7rem;
   margin-bottom: 22.1rem;
   position: relative; }
+  .section7 a {
+    text-decoration: none;
+    color: black; }
+  .section7 .button {
+    width: 22.9rem;
+    height: 5.64rem;
+    border: 1px solid black;
+    font-size: 1.6rem; }
   .section7 .agriculture {
     position: absolute;
     z-index: -1;
     transform: rotate(180deg); }
   @media only screen and (max-width: 75em) {
     .section7 {
-      flex-direction: column; }
+      flex-direction: column;
+      text-align: center; }
       .section7 img {
         width: 50rem;
         margin: 0 auto; } }
   .section7 .text {
     margin-left: 32rem; }
+    @media only screen and (max-width: 75em) {
+      .section7 .text {
+        margin-left: 0; } }
     .section7 .text p {
       font-size: 5rem;
       line-height: 6.62rem;
       margin-top: 16.4rem; }
+      @media only screen and (max-width: 75em) {
+        .section7 .text p {
+          margin: 0 15rem 0 15rem; } }
     .section7 .text img {
       width: 22.9rem;
       height: 100%; }
@@ -317,22 +361,40 @@ html {
   justify-content: space-between;
   font-size: 1.6rem;
   color: green; }
+  @media only screen and (max-width: 37.5em) {
+    .section8 {
+      flex-direction: column;
+      text-align: center; } }
   .section8 p {
     padding-bottom: 12.6rem;
     margin-right: 10.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section8 p {
+        margin: 0;
+        padding: 0; } }
   .section8 .footer-logo {
     margin-top: 2.3rem;
     margin-left: 20.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section8 .footer-logo {
+        margin: 0;
+        padding: 0; } }
     .section8 .footer-logo img {
       width: 6.6rem;
       height: auto;
       margin-bottom: 3.57rem; }
   .section8 .footer-link {
     margin-right: 28.7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section8 .footer-link {
+        margin-right: 0; } }
     .section8 .footer-link li {
       list-style-type: none; }
     .section8 .footer-link .li1 {
       margin-top: 6.8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .section8 .footer-link .li1 {
+          margin: 0; } }
     .section8 .footer-link a {
       text-decoration: none;
       color: #008737; }
@@ -344,5 +406,11 @@ html {
     .section8 .footer-link2 .link1 {
       margin-top: 3.4rem;
       margin-right: 17.9rem; }
+      @media only screen and (max-width: 37.5em) {
+        .section8 .footer-link2 .link1 {
+          margin: 0; } }
       .section8 .footer-link2 .link1 .a1 {
         margin-left: 4.5rem; }
+        @media only screen and (max-width: 37.5em) {
+          .section8 .footer-link2 .link1 .a1 {
+            margin: 0; } }
